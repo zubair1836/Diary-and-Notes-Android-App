@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#80234595</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple">#234595</color>
+    <color name="light_purple">#42234595</color>
+    <color name="dark">#EBEBEB</color>
+    <color name="text_dark_color">#1F1F21</color>
+    <color name="text_light_color">#A9A9AE</color>
+    <color name="card_circle_color">#DFDFDF</color>
+    <color name="card_color">#00000029</color>
+    <color name="red_color_text">#952333</color>
+    <color name="privacy_color">#80DAFC</color>
+    <color name="light_privacy_color">#2080DAFC</color>
+    <color name="chat_color">#A89CCC</color>
+    <color name="light_chat_color">#20A89CCC</color>
+    <color name="more_apps_color">#7CDB9C</color>
+    <color name="light_more_apps_color">#207CDB9C</color>
+    <color name="invite_color">#DBCB7C</color>
+    <color name="light_invite_color">#20DBCB7C</color>
+    <color name="remove_adds_color">#EECE32</color>
+    <color name="light_remove_adds_color">#20EECE32</color>
+    <color name="insta_color">#EC18A6</color>
+    <color name="light_insta_color">#20EC18A6</color>
+    <color name="font_size_font_color">#116184</color>
+    <color name="font_size_dialogue_box_color">#2F99C8</color>
+    <color name="spinner_back_ground_color">#4774DC</color>
+    <color name="chat_text_color">#56565D</color>
+    <color name="emotion_color">#234595</color>
+    <color name="select_caht_color">#177862EC</color>
+
+
+
+    <color name="lightpurple">#90234595</color>
+    <color name="text_light_purple_color">#70234595</color>
+    <color name="search_button_background_color">#40234595</color>
+    <color name="main_button_click_color">#60234595</color>
+    <color name="main_button_un_click_color">#909097</color>
+    <color name="more_light_purple">#20234595</color>
+    <color name="selected_mess_color">#177862EC</color>
+
+    <color name="transparent">#00FFFFFF</color>
+</resources>

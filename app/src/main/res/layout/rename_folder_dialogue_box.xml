@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="306dp"
+    android:layout_height="174dp"
+    android:background="#20234595"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/et_foldername"
+            android:layout_width="249dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:fontFamily="@font/tw_cen_mt"
+            android:textColor="@color/purple"
+            android:hint="Folder 1"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:foreground="?selectableItemBackground"
+            android:id="@+id/bt_createfolder"
+            android:layout_width="209dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:text="Rename"
+            android:fontFamily="@font/tw_cen_mt"
+            android:textAllCaps="false"
+            android:textSize="21dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_create_background"/>
+
+    </LinearLayout>
+
+</LinearLayout>

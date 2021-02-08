@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cv_background_link_card"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@drawable/cv_background_link_card"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="8dp"
+                android:textColor="#56565D"
+                android:fontFamily="@font/tw_cen_mt"
+                android:lineSpacingExtra="8dp"
+                android:textSize="18dp"
+                android:id="@+id/tv_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:textColor="#94A9A9AE"
+                android:id="@+id/tv_time"
+                android:text="adfasfd"
+                android:textSize="10dp"
+                android:fontFamily="@font/tw_cen_mt"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+</LinearLayout>

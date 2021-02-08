@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_Activity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/chat_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/chat_toolbar"
+            android:layout_width="match_parent"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/chat_toolbar_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Chat Backup"
+                android:fontFamily="@font/tw_cen_mt"
+                android:textSize="19dp"
+                android:paddingLeft="16dp"
+                android:layout_marginRight="14dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/circle_background"
+                android:textColor="@android:color/black"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_appbar_layout"
+        android:backgroundTint="#502F99C8"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:weightSum="16">
+
+            <TextView
+                android:id="@+id/chat_back_up_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Backup to Google Drive"
+                android:textAlignment="center"
+                android:fontFamily="@font/tw_cen_mt"
+                android:textSize="25dp"
+                android:textColor="@color/purple" />
+
+            <RadioGroup
+                android:id="@+id/radio_button_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/never_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Never"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:textSize="19dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/purple"/>
+
+                <RadioButton
+                    android:id="@+id/daily_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:textSize="19dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/purple"/>
+
+                <RadioButton
+                    android:id="@+id/weekly_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:textSize="19dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/purple"/>
+
+                <RadioButton
+                    android:id="@+id/monthly_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:textSize="19dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/purple"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="256dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/chat_backup_text"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/tw_cen_mt"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/backup_button"
+                android:layout_weight="0.5"
+                android:layout_width="256dp"
+                android:layout_height="50dp"
+                android:text="Back up"
+                android:textSize="26dp"
+                android:fontFamily="@font/tw_cen_mt"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/chat_back_up_button_background"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

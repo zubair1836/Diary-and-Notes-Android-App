@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/menu_export"
+        android:title="Export Folder" />
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/menu_rename"
+        android:title="Rename folder" />
+
+    <item
+        android:id="@+id/menu_clearchat"
+        android:title="Clear chat" />
+
+    <item
+        android:id="@+id/menu_deletefolder"
+        android:title="Delete folder" />
+
+</menu>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_Activity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/setting_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@color/white">
+        
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/setting_toolbar"
+            android:layout_width="match_parent"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/setting_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Settings"
+                android:fontFamily="@font/tw_cen_mt"
+                android:textSize="19dp"
+                android:paddingLeft="16dp"
+                android:layout_marginRight="14dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/circle_background"
+                android:textColor="@android:color/black"/>
+
+        </androidx.appcompat.widget.Toolbar>
+        
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_appbar_layout"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:foreground="?selectableItemBackground"
+                android:onClick="Show_policy"
+                android:id="@+id/privacy_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/setting_privacy_layout_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/privacy_background"
+                    android:padding="11dp"
+                    android:src="@drawable/lock" />
+
+                <TextView
+                    android:id="@+id/privacy_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Privacy"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:textColor="#901F1F21"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/chat_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/setting_chat_layout_background"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_chat"
+                    android:padding="11dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/chat_background"/>
+
+                <TextView
+                    android:id="@+id/chat_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#901F1F21" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:foreground="?selectableItemBackground"
+                android:onClick="More_Apps"
+                android:id="@+id/more_apps_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/setting_more_layout_background"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_more"
+                    android:padding="11dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/more_apps_background"/>
+
+                <TextView
+                    android:id="@+id/more_apps_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More Apps"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#901F1F21" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:foreground="?selectableItemBackground"
+                android:onClick="Invite"
+                android:id="@+id/invite_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/setting_invite_layout_background"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_share"
+                    android:padding="11dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/invite_background"/>
+
+                <TextView
+                    android:id="@+id/invite_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invite"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#901F1F21" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:foreground="?selectableItemBackground"
+                android:onClick="remove_add"
+                android:id="@+id/remove_adds_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/setting_remove_adds_layout_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/remove_adds_background"
+                    android:padding="11dp"
+                    android:src="@drawable/ads" />
+
+                <TextView
+                    android:id="@+id/remove_adds_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:text="Remove Ads"
+                    android:textColor="#901F1F21"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="open_instagram"
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/insta_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/light_insta_layout_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/insta_layout_background"
+                    android:padding="11dp"
+                    android:src="@drawable/ic_insta" />
+
+                <TextView
+                    android:id="@+id/insta_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Follow"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:textColor="#901F1F21"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

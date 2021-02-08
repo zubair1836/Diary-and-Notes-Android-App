@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diary.diaryandnotes">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.diary.diaryandnotes.Ads_Initializer"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.diary.diaryandnotes.Setting_Activity"></activity>
+        <activity android:name="com.diary.diaryandnotes.Add_Link_Activity" />
+        <activity android:name="com.diary.diaryandnotes.Search_Activity" />
+        <activity android:name="com.diary.diaryandnotes.Show_Chats" />
+        <activity android:name="com.diary.diaryandnotes.Chat_Activity"/>
+        <activity android:name="com.diary.diaryandnotes.Chat_Backup_Activity"/>
+        <activity android:name="com.diary.diaryandnotes.CloudBackup" />
+        <activity android:name="com.diary.diaryandnotes.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.diary.diaryandnotes.In_App_Purchase.subscribe_activity"></activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.ca-app-pub-1354374652592982/9604017614"
+            android:value="ca-app-pub-1354374652592982~7360997650 " />
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.ca-app-pub-1402293978206326/5766724311"-->
+<!--            android:value="ca-app-pub-1402293978206326~8584459348" />-->
+    </application>
+
+</manifest>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_Activity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/chat_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/chat_toolbar"
+            android:layout_width="match_parent"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/chat_toolbar_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/tw_cen_mt"
+                android:text="Chat"
+                android:textSize="19dp"
+                android:paddingLeft="16dp"
+                android:layout_marginRight="14dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/circle_background"
+                android:textColor="@android:color/black"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_appbar_layout"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="15">
+
+            <LinearLayout
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/font_size_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/setting_privacy_layout_background"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/font"
+                    android:padding="11dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/font_size_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Font size"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/purple" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/chat_backup_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/setting_chat_background"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_upload"
+                    android:padding="11dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+
+                    android:id="@+id/chat_backup_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tw_cen_mt"
+                    android:text="Chat backup"
+                    android:textSize="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/purple" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Show_Chats">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="?actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <LinearLayout
+                android:id="@+id/ll_f_visible"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_toolbar">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="?selectableItemBackground"
+                        android:onClick="back"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_arrow_back_black_24dp"></ImageView>
+
+
+                    <TextView
+                        android:textSize="19dp"
+                        android:fontFamily="@font/tw_cen_mt"
+                        android:id="@+id/tv_folder_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="New Folder"
+                        android:textColor="@android:color/black"></TextView>
+
+                    <ImageView
+                        android:id="@+id/iv_more"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="?selectableItemBackground"
+                        android:onClick="show_more"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_more_vert_black_24dp"
+                        android:tint="@color/text_dark_color"></ImageView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="3dp"
+                android:id="@+id/ll_long_pressvisible"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:background="@drawable/background_toolbar"
+                    android:id="@+id/ll_sel_visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:id="@+id/iv_clear_selection"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="?selectableItemBackground"
+                        android:onClick="back"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_arrow_back_black_24dp"></ImageView>
+
+                    <TextView
+                        android:textColor="@color/text_dark_color"
+                        android:id="@+id/tv_count"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/tw_cen_mt"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="1"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/iv_copy_cb"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="?selectableItemBackground"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_content_copy_black_24dp"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/iv_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="?selectableItemBackground"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_delete_black"></ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:padding="3dp"
+                android:orientation="horizontal"
+                android:id="@+id/ll_serach_visible"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_cancel_search"
+                        android:src="@drawable/ic_arrow_back_black_24dp"
+                        android:layout_weight="0.1"
+                        android:padding="8dp"
+                        android:background="?selectableItemBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"></ImageView>
+
+                    <EditText
+                        android:id="@+id/et_serachtext"
+                        android:ems="10"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="0.7"
+                        android:hint="Search..."
+                        android:textColorHint="@color/text_dark_color"
+                        android:background="@drawable/background_toolbar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"></EditText>
+
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_previous"
+                        android:padding="5dp"
+                        android:tint="@color/white"
+                        android:background="@drawable/search_button_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_keyboard_arrow_up_black_24dp"></ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_weight="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_next"
+                        android:tint="@color/white"
+                        android:background="@drawable/search_button_circle"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></ImageView>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+<!--        <com.google.android.gms.ads.AdView-->
+<!--            xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--            ads:adSize="BANNER"-->
+<!--            android:id="@+id/adView"-->
+<!--            ads:adUnitId="ca-app-pub-1354374652592982~7360997650"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="50dp"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_links"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/et_link"
+                android:hint=" Type here"
+                android:textColorHint="@color/text_light_purple_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:lineSpacingExtra="8dp"
+                android:fontFamily="@font/tw_cen_mt"
+                android:background="@drawable/cv_edit_text_background_link"
+                android:ems="10"
+                android:padding="5dp"
+                android:textColor="@color/purple"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cv_background_link"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:paddingBottom="3dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="Save_Link"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/ic_send_black_24dp"
+                android:tint="@color/purple"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

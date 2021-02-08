@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:cardElevation="0dp"
+    app:cardCornerRadius="7dp"
+    android:foreground="?selectableItemBackground"
+    android:background="@drawable/main_card_view_background"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/bt_firstlatter"
+            android:text="M"
+            android:layout_marginLeft="1dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/tw_cen_mt"
+            android:textSize="25dp"
+            android:textColor="@color/text_dark_color"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/card_view_circle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:id="@+id/tv_f_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#791F1F21"
+                android:fontFamily="@font/tw_cen_mt"
+                android:textSize="26dp"
+                android:text="Main Demo 1" />
+
+            <TextView
+                android:id="@+id/tv_short_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tw_cen_mt"
+                android:text="123456789"
+                android:maxLength="24"
+                android:maxLines="1"
+                android:textColor="#80A9A9AE"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
